@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video PLayer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player"> 
+            <video id="video" poster="./images/poster.jpg" muted  src="./videos/lofi.mp4"></video>
+            <div class="player-overlay">
+                <h2 class="player-title">Devs' beats</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="skip back 10 seconds" title="skip back 10 seconds"></button>
+                    <button class="button" id="play" aria-label="play" title="play"></button>
+                    <button class="button" id="pause" hidden aria-label="pause" title="pause"></button>
+                    <button class="button" id="forward" aria-label="skip forth 10 seconds" title="skip forth 10 seconds"></button>
+                    <div class="player-progress">
+                        <input id="progress" type="range" min="0" value="0" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="./js/index.js"></script>
+</body>
+</html>
